@@ -30,7 +30,7 @@ jobs:
         with:
           branch: v3.15
       - run: |
-          apk add go-ipfs
+          apk-get add go-ipfs
           ipfs init
           ipfs daemon &
           shell: alpine.sh --root {0}
